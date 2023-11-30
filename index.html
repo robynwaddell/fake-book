@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Robyn Waddell">
+  <meta name="description" content="Robyn Waddell's Portfolio">
+  <meta name="keywords" content="web developer, front end, design">
+  <title>Finsta</title>
+  <link rel="stylesheet" href="./assets/style/index.css" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="./assets/script/app.js" defer></script> 
+</head>
+ <body>
+    <header>
+        <h2>FakeBook</h2>
+        <nav>
+         <ul>
+            <li>Groups</li>
+            <li>Chats</li>
+            <li>Followers</li>
+            <li>Friends</li>
+            <li>Settings</li>
+         </ul>
+        </nav>
+        <img class="modal-style" src="./assets/vadym-chumak-gy3MVSG2dEg-unsplash.jpg" id="open-modal-btn">
+    </header>
+    <main class="container">
+        <div id="modal" class="modal-container">
+            <div class="modal-content">
+              <span class="close" id="close-modal-btn"></span>
+              <h3 id="name"></h3>
+              <h3 id="user-name"></h3>
+              <h3 id="email"></h3>
+              <h3 id="groups"></h3>
+              <h3 id="pages"></h3>
+            </div>
+        </div>
+        <section>
+            <textarea></textarea>
+            <div>
+                <input type="file" id="get-file" accept="image/png, image/jpg, image/gif, image/jpeg">
+                <input type="button" id="post-btn" value="Post">
+            </div>
+        </section>
+        <div id="post-container"></div>
+    </main>
+ </body>
+</html>
